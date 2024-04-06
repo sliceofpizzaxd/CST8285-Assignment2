@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../CSS/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Registration</title>
+	</head>
+	<body>
+		<div class="navbar"> 
+			<div class="linkContainer" id="left">
+				<div class="searchContainer">
+					<form class="searchbar" action="">
+						<input type="text" placeholder="enter book name, genre, or author" name="search">
+						<button type="submit">Search</button>
+					</form>
+				</div>
+			</div>
+			<div class="linkContainer" id="center">
+				<a class="home" href="http://localhost/Assign02/Pages/Index.html">Home</a>
+				<a class="manage" href="http://localhost/Assign02/Pages/Manage.html">Manage Library</a>
+			</div>	
+			<div class="linkContainer" id="right">
+				<a class="login" href="http://localhost/Assign02/Pages/Login.html">Login</a>
+				<a class="signup active" href="http://localhost/Assign02/Pages/Registration.html">Sign Up</a>
+			</div>		
+		</div>
+		<div class="formcontainer">
+			<h1>Registration</h1>
+
+			<form name="signup" action="Registration.html" method="get" onsubmit="return validate();">
+				<div class="textfield">
+					<label for="email">Email Address</label>
+					<input type="text" name="email" id="email" placeholder="Email">
+					<p id="emailMessage" class="errorMessage"> </p>
+				</div>
+
+				<div class="textfield">
+					<label for="login">User Name</label>
+					<input type="text" name="login" id="login" placeholder="Username">
+					<p id="loginMessage" class="errorMessage"> </p>
+				</div>
+
+				<div class="textfield">
+					<label for="pass">Password</label>
+					<input type="password" name="pass" id="pass" placeholder="Password">
+					<p id="passMessage" class="errorMessage"> </p>
+				</div>
+			
+				<div class="textfield">
+					<label for="pass2">Re-type Password</label>
+					<input type="password" id="pass2" placeholder="Password">
+					<p id="pass2Message" class="errorMessage"> </p>
+				</div>
+
+				<button type="submit" id="submit">Sign-Up</button>
+				<button type="reset" id="reset">Reset</button>
+
+			</form>
+		</div>
+	<script src="JS/script.js"></script>
+	</body>
+</html>
