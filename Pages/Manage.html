@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../CSS/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Manage</title>
+	</head>
+	<body>
+		<!--Navbar-->
+		<div class="navbar"> 
+			<div class="linkContainer" id="left">
+				<div class="searchContainer">
+					<form class="searchbar" action="">
+						<input type="text" placeholder="enter book name, genre, or author" name="search">
+						<button type="submit">Search</button>
+					</form>
+				</div>
+			</div>
+			<div class="linkContainer" id="center">
+				<a class="home" href="http://localhost/Assign02/Pages/Index.html">Home</a>
+				<a class="manage  active" href="http://localhost/Assign02/Pages/Manage.html">Manage Library</a>
+			</div>
+			<div class="linkContainer" id="right">
+				<a class="login" href="http://localhost/Assign02/Pages/Login.html">Login</a>
+				<a class="signup" href="http://localhost/Assign02/Pages/Registration.html">Sign Up</a>
+			</div>  
+		</div>
+		
+		<!--library-->
+		<div class="page">
+			<h1>Manage Library</h1>
+			
+			<!--current user-->
+			<div class="textbox">
+				<p id="currentuser">
+					Logged in as: 
+				</p>
+			</div>
+			
+			<hr>
+			
+			<!--list of books-->
+			<h3> Books </h3>
+			<div class="searchresults">
+				<table>
+					  <tr>
+						<th>BookID</th>
+						<th>Title</th>
+						<th>Author</th>
+						<th>Genre</th>
+					  </tr>
+				</table>
+			</div>
+			
+			<hr>
+			
+			<!-- remove book from library -->
+			<h3> Remove Book </h3>
+			<div class="textbox">
+				<form name="removebook" action="", onsubmit="">
+					
+					<!-- Title field -->
+					<div class="textfield">
+						<label for="bookid">Book ID</label>
+						<input type="text" name="bookid" id="title" placeholder="Enter the ID of the book you wish to remove">
+					</div>
+					
+					<!-- form manipulation button -->
+					<button type="submit" id="submit">Submit</button>
+				</form>
+			</div>
+			
+			<hr>
+			
+			<h3> add Book </h3>
+			<!-- add book to library -->
+			<div class="textbox">
+					<form name="removebook" action="" onsubmit="">
+					<!-- Title field -->
+					<div class="textfield">
+						<label for="title">Title</label>
+						<input type="text" name="title" id="title" placeholder="Enter a book title...">
+					</div>
+					
+					<!-- Author field -->
+					<div class="textfield">
+						<label for="author">Author</label>
+						<input type="text" name="author" id="author" placeholder="Enter Author name...">
+					</div>
+				
+					<!-- Genre field -->
+					<div class="textfield">
+						<label for="genre">Genre</label>
+						<input type="text" id="genre" placeholder="Enter book genre...">
+					</div>
+					
+					<!-- form manipulation buttons -->
+					<button type="submit" id="submit">Submit</button>
+					<button type="reset" id="reset">Reset</button>
+
+				</form>
+			</div>
+			
+		</div>
+		
+	</body>
+</html>
